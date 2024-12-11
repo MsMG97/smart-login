@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/signup.css" />
+  </head>
+  <body class="bg-dark">
+    <div class="smart-login w-50 mx-auto p-5 text-center shadow-lg my-5">
+      <h1 class="text-danger">Smart Login System</h1>
+      <div class="groub">
+        <input
+          type="text"
+          class="form-control my-3 focus-ring"
+          style="--bs-focus-ring-color: rgba(var(--bs-danger-rgb), 0.25)"
+          id="nameInput"
+          placeholder="Enter Your name"
+        />
+        <p id="nameMsg" class="text-danger d-none">Name Must be Validation</p>
+
+        <input
+          type="email"
+          class="form-control my-3 focus-ring"
+          style="--bs-focus-ring-color: rgba(var(--bs-danger-rgb), 0.25)"
+          id="emailInput"
+          placeholder="Enter Your email"
+        />
+        <p id="emailMsg" class="text-danger d-none">Email Must be Validation</p>
+        <p id="emailExisMsg" class="text-warning d-none">
+          email already exists
+        </p>
+
+        <input
+          type="password"
+          class="form-control focus-ring"
+          style="--bs-focus-ring-color: rgba(var(--bs-danger-rgb), 0.25)"
+          id="passInput"
+          placeholder="Enter Your password"
+        />
+        <p id="passMsg" class="text-danger d-none">
+          Password Must be Validation
+        </p>
+      </div>
+      <p id="requiredMsg" class="text-warning d-none">All inputs is required</p>
+      <p id="notValidMsg" class="text-warning d-none">USER INFO MUSTBE VALID</p>
+      <p id="validMsg" class="text-success d-none">SUCCESS</p>
+      <br />
+      <br />
+      <button id="signupBtn" class="btn btn-outline-danger w-100">
+        Sign Up
+      </button>
+
+      <p class="text-danger my-3">
+        Don’t have an account?
+        <a id="signinHref" href="#" class="text-decoration-none text-danger"
+          >Sign Up</a
+        >
+      </p>
+    </div>
+
+    <script src="js/signup.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
